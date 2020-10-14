@@ -2,12 +2,47 @@
 <html>
 <head>
 	<title>Home | w3isaiah</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/script.js"></script>
 </head>
 
-<style>
-</style>
-
 <body>
+<div id="main_menu" class="menus">
+	<div id="header" class="menus">
+		<center>
+		<h2 id="heading">w3isaiah</h2>
+		<img id="baymax" src="drawable/baymax.jpg"/>
+		</center>
+	</div>
+	<div id="options" class="menus">
+		<button class="btn">Home</button>
+		<button class="btn">Profile</button>
+		<button class="btn">Subject</button>
+		<button class="btn">About</button>
+	</div>
+</div>
 
+<button id="main_btn" onclick="mainFun()">M<br />E<br />N<br />U</button>
+
+<script>
+function mainFun()
+{
+var x = document.getElementsByClassName("menus");
+var i = document.getElementById("main_btn");
+for(var j=0; j<x.length; j++)
+if( x[j].style.display == "block")
+{
+	x[j].style.display = "none";
+	i.innerHTML = "M<br />E<br />N<br />U";
+	i.style.marginLeft = "";
+}
+else
+{
+	x[j].style.display = "block";
+	i.innerHTML = "H<br />I<br />D<br />E";
+	i.style.marginLeft = "20%";
+}
+}
+</script>
 </body>
 </html>
