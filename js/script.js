@@ -15,6 +15,6 @@ else
 {
 	x[j].style.display = "block";
 	i.innerHTML = "H<br />I<br />D<br />E";
-	i.style.marginLeft = "20%";
+	i.style.marginLeft = "50%";
 }
 }
