@@ -9,12 +9,21 @@ if( x[j].style.display == "block")
 {
 	x[j].style.display = "none";
 	i.innerHTML = "M<br />E<br />N<br />U";
-	i.style.marginLeft = "";
 }
 else
 {
 	x[j].style.display = "block";
 	i.innerHTML = "H<br />I<br />D<br />E";
+}
+}
+
+
+/*var i = document.getElementById("main_btn");
+if(window.innerHeight > window.innerWidth)
+{
 	i.style.marginLeft = "50%";
 }
+else
+{
+	i.style.marginLeft = "";
 }
