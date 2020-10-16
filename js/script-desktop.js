@@ -18,3 +18,18 @@ else
 	document.getElementById("main_btn").style.marginLeft = "50%";
 }
 }
+
+
+function subjoc(){
+	
+var subjd = document.getElementById('subj');
+if(subjd.style.display === "none")
+{
+	subjd.style.display = "";
+}
+else
+{
+	subjd.style.display = "none";
+}
+
+}
