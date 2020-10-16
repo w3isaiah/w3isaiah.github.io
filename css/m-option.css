@@ -17,7 +17,6 @@ body {
 	font-family: courier;
 	border: none;
 	color: #f0f0f0;
-	font-size: 35px;
 	padding-right: 20px;
 	top: 0%;
 	background:
@@ -63,7 +62,7 @@ body {
 }
 
 #heading1 {
-	-webkit-text-stroke: 1px rgba(254,255,0,0.7);
+	-webkit-text-stroke: 1px rgba(50,255,255,1);
 	font-size: 200%;
 	width: 100%;
 }

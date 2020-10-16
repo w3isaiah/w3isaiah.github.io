@@ -8,13 +8,13 @@ for(var j=0; j<x.length; j++)
 if( x[j].style.display == "block")
 {
 	x[j].style.display = "none";
-	i.innerHTML = "M<br />E<br />N<br />U";
+	i.innerHTML = "<h1>M<br />E<br />N<br />U</h1>";
 	document.getElementById("main_btn").style.marginLeft = "";
 }
 else
 {
 	x[j].style.display = "block";
-	i.innerHTML = "H<br />I<br />D<br />E";
+	i.innerHTML = "<h1>H<br />I<br />D<br />E</h1>";
 	document.getElementById("main_btn").style.marginLeft = "50%";
 }
 }
