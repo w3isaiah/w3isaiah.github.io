@@ -7,22 +7,23 @@
 	<script src="js/script-desktop.js"></script>
 </head>
 
-<body>
-<div id="main_menu" class="menus">
+<body class="dark">
+<div id="main_menu" class="menus dark">
 	<div id="header" class="menus">
 		<center>
 		<h1 id="heading1">w 3 i s a i a h</h1>
 		<img id="baymax" src="drawable/baymax.jpg"/>
 		</center>
-		<button class="options" href="index.html">Home</button>
-		<button class="options">Profile</button>
-		<button class="options" onclick="subjoc()">Subject</button>
+		<button class="options mainoption" href="index.html">Home</button>
+		<button class="options mainoption">Profile</button>
+		<button class="options mainoption" onclick="subjoc()">Subject</button>
 			<div id="subj" style="display: none">
 				<button class="options subjs">ALCCO3</button>
 				<button class="options subjs">OLWS1</button>
 				<button class="options subjs">CPPROG3</button>
 			</div>
-		<button class="options">About</button>
+		<button class="options mainoption" onclick="dark_light()">Light/Dark Mode</button>
+		<button class="options mainoption">About</button>
 	</div>
 </div>
 
