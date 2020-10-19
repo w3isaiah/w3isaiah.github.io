@@ -41,12 +41,14 @@ function dark_light()
 	if(dark[light].style.background == "")
 	{
 		dark[light].style.background = "#fff";
-		document.getElementById("heading1").style.color="#000";
+		document.getElementById("heading1").style.color="";
+		document.getElementById("menus").style.background = "#fff";
 	}
 	else
 	{
 		dark[light].style.background = "";
 		document.getElementById("heading1").style.color ="";
+		document.getElementById("menus").style.background = "";
 	}
 	
 	var txt_color = document.getElementsByClassName("options");
