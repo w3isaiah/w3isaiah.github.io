@@ -54,7 +54,7 @@ function dark_light()
 	
 	if(txt_color[txtt].style.color == "")
 	{
-		txt_color[txtt].style.color="#000";
+		txt_color[txtt].style.color="";
 	}
 	else
 	{
