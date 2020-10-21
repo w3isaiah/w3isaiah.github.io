@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	
+	<link rel="stylesheet" href="styles.css">
+	
+	<script>
+		/* This function is for numbers to insert to textview */
+		function insert(num)		{
+		document.form.textview.value=document.form.textview.value+num;
+		}
+		
+		/* This function is for Equal or Avaluation Command (eval) */
+		function equal() 
+		{
+		var exp=document.form.textview.value;
+		if(exp) 
+			{
+			document.form.textview.value=eval(exp);
+			}
+		}
+		
+		/* This function is to Clean the Text View */
+		function clean() 
+		{
+		document.form.textview.value="";
+		}
+		
+		/* This function is for delete value or back*/
+		function back() 
+		{
+		var exp=document.form.textview.value;
+		document.form.textview.value=exp.substring(0,exp.length-1);
+		}
+	</script>
+</head>
+
+<body>
+<div class="navbar">
+			<a href="index.html">Home</a>
+			<a href="profile.html">Profile</a>
+			<a href="images.html">Images</a>
+			<a href="code.html">Codes</a>
+			<div class="dropdown">
+				<button class="dropbtn">Topics
+				<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="table.html">HTML Table</a>
+					<a href="lists.html">HTML Lists</a>
+					<a href="form.html">HTML Forms</a>
+					<a href="class.html">HTML Class</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Projects
+				<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="calculator.html">Calculator</a>
+					<a href="input.html">Midterm Examination</a>
+					<a href="login.html">Login</a>
+					<a href="test.html">Test Page</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Media
+				<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="movie-links.html">Movies Section</a>
+				</div>
+			</div>
+	</div>
+	
+	<div class="main-cal">
+		<form name="form">
+			<input class="textview" name="textview">
+		</form>
+		<table>
+			<tr>
+				<td><input class="cal-btn" type="button" value="+" onclick="insert('+')"></td>
+				<td><input class="cal-btn" type="button" value="-" onclick="insert('-')"></td>
+				<td><input class="cal-btn" type="button" value="/" onclick="insert('/')"></td>
+				<td><input class="cal-btn" type="button" value="x" onclick="insert('*')"></td>
+			</tr>
+			<tr>
+				<td><input class="cal-btn" type="button" value="1" onclick="insert(1)"></td>
+				<td><input class="cal-btn" type="button" value="2" onclick="insert(2)"></td>
+				<td><input class="cal-btn" type="button" value="3" onclick="insert(3)"></td>
+				<td><input class="cal-btn" type="button" value="<" onclick="back()"></td>
+			</tr>
+			<tr>
+				<td><input class="cal-btn" type="button" value="4" onclick="insert(4)"></td>
+				<td><input class="cal-btn" type="button" value="5" onclick="insert(5)"></td>
+				<td><input class="cal-btn" type="button" value="6" onclick="insert(6)"></td>
+				<td><input class="cal-btn" id="clean" type="button" value="C" onclick="clean()"></td>
+			</tr>
+			<tr>
+				<td><input class="cal-btn" type="button" value="7" onclick="insert(7)"></td>
+				<td><input class="cal-btn" type="button" value="8" onclick="insert(8)"></td>
+				<td><input class="cal-btn" type="button" value="9" onclick="insert(9)"></td>
+				<td rowspan="2"><input class="cal-btn" id="equal" type="button" value="=" onclick="equal()"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input class="cal-btn" id="zero" type="button" value="0" onclick="insert(0)"></td>
+				<td><input class="cal-btn" type="button" value="." onclick="insert('.')"></td>
+			</tr>
+			</table>
+	</div>
+	
+	<div class="copy-right" style="margin-top:10px;float:bottom;">
+		James Isaiah C. Love. Incognito Pro. &trade; &copy;
+	</div>
+	
+</body>
+</html>

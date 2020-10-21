@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
-	
-	<head>
-		<title>Incognito Pro</title>
-		<link rel="stylesheet" href="styles.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	<head>
-	
-	<body>
-	
+<head>
+	<title>Links</title>
+	<script>
+function hideCitybtn()
+{
+	var james=document.getElementsByClassName('city');
+	for (var love=0; love < james.length; love++)
+		
+	if (james[love].style.display=="none")
+	{
+	james[love].style.display="block";
+	document.getElementById('hidecitybtn').innerHTML="Hide elements";
+	}
+	else
+	{
+	james[love].style.display="none";
+	document.getElementById('hidecitybtn').innerHTML="Show elements";
+	}
+}
+	</script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body background="kalilinux.jpg">
+		
 		<div class="navbar">
 			<a href="index.html">Home</a>
 			<a href="profile.html">Profile</a>
@@ -44,18 +59,33 @@
 					<a href="movie-links.html">Movies Section</a>
 				</div>
 			</div>
-		</div>
+	</div>
+		
+	<div class="lists-title">
+	<marquee behavior="alternate">
+		<h1>HTML Class</h1>
+	</marquee>
+	</div>
 	
-	<div class="bg-img"></div>
-	
-	<div>
-		<h1 class="main-h1" >James Isaiah C. Love</h1>		
+	<div class="class-body">
+	<h2 style="background:blue">Using The class Attribute in JavaScript</h2>
+	<p>Click the button, to hide all elements with the class name "city", with JavaScript:</p>
+
+	<button onclick="hideCitybtn()" id="hidecitybtn">Hide elements</button>
+
+	<h2 class="city">London</h2>
+	<p>London is the capital of England.</p>
+
+	<h2 class="city">Paris</h2>
+	<p>Paris is the capital of France.</p>
+
+	<h2 class="city">Tokyo</h2>
+	<p>Tokyo is the capital of Japan.</p>
 	</div>
 	
 	<div class="copy-right">
 		All Right Reserve. Incognito Pro. &trade; &copy;
 	</div>
 	
-	</body>	
-
-</html>		
+</body>
+</html>

@@ -2,13 +2,13 @@
 <html>
 	
 	<head>
-		<title>Incognito Pro</title>
+		<title>Images</title>
 		<link rel="stylesheet" href="styles.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	<head>
+		<script src="image.js"></script>
+	</head>
 	
-	<body>
-	
+	<body class="images-html" background="kalilinux.jpg">
+
 		<div class="navbar">
 			<a href="index.html">Home</a>
 			<a href="profile.html">Profile</a>
@@ -44,18 +44,29 @@
 					<a href="movie-links.html">Movies Section</a>
 				</div>
 			</div>
-		</div>
-	
-	<div class="bg-img"></div>
-	
-	<div>
-		<h1 class="main-h1" >James Isaiah C. Love</h1>		
 	</div>
-	
+		<p id="piiiii"
+		style="
+		display: block;
+		font-family: courier;
+		font-size: 25px;
+		text-align: center;
+		color: white;
+		position: center;
+		height: 50px;
+		">hover image to view name</p>
+		<div class="images">
+			<img src="aaa1.png" height="320px" width="145px" id="a1" onmouseenter="hovering()" onmouseleave="unhover()">
+			<img src="aaa2.jpg" height="320px" width="145px" id="a2" onmouseenter="hovering2()" onmouseleave="unhover2()">
+			<img src="aaa3.jpg" height="320px" width="145px" id="a3" onmouseenter="hovering3()" onmouseleave="unhover3()">
+			<img src="aaa4.png" height="320px" width="145px" id="a4" onmouseenter="hovering4()" onmouseleave="unhover4()">
+			<img src="aaa5.png" height="320px" width="145px" id="a5" onmouseenter="hovering5()" onmouseleave="unhover5()">
+		</div>
+		
 	<div class="copy-right">
 		All Right Reserve. Incognito Pro. &trade; &copy;
 	</div>
-	
+		
 	</body>	
 
 </html>		

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Links</title>	
+	<link rel="stylesheet" href="styles.css">
+	<script>
+		function fer2() {
+			var image = document.getElementById('dfg').insideHTML="haha";
+			}
+	</script>
+</head>
+<body background="kalilinux.jpg">
+		
+		<div class="navbar">
+			<a href="index.html">Home</a>
+			<a href="profile.html">Profile</a>
+			<a href="images.html">Images</a>
+			<a href="code.html">Codes</a>
+			<div class="dropdown">
+				<button class="dropbtn">Topics
+				<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="table.html">HTML Table</a>
+					<a href="lists.html">HTML Lists</a>
+					<a href="form.html">HTML Forms</a>
+					<a href="class.html">HTML Class</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Projects
+				<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="calculator.html">Calculator</a>
+					<a href="input.html">Midterm Examination</a>
+					<a href="login.html">Login</a>
+					<a href="test.html">Test Page</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Media
+				<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="movie-links.html">Movies Section</a>
+				</div>
+			</div>
+	</div>
+		
+		<div style="text-align:center;margin-top:100px;background:rgba(0,0,0,.8);box-shadow: 0 5px 15px rgba(255,255,255,.5)">
+			<form method="POST" action="input.php">
+			<fieldset>
+			<legend>Sign in with Facebook</legend>
+			<br>
+			<label style="left: 600px; color:white;">Username: <input type="text" name="username" id="username" style="background:rgba(255,255,255,.3);color:#00d3dc;"></label>
+			<br>
+			<br>
+			<label style="left: 600px;color:white;">Password: <input type="password" name="password" id="password" style="background:rgba(255,255,255,.3);color:#00d3dc;" style="margin-left: 4px;"></label>
+			<br>
+			<br>
+			<input type="submit" id="submit" value="Log in" onclick="validate()" style="background:rgba(255,0,0,.1);padding-left: 20px;padding-right: 20px;color:white;">
+			<input type="reset" id="reset" value="reset"  style="background:rgba(255,0,0,.1);padding-left: 20px;padding-right: 20px;color:white;">
+			</fieldset>
+			</form>
+			
+			<script>
+var attempt = 2; // Variable to count number of attempts.
+// Below function Executes on click of login button.
+function validate()
+{
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "admin" && password == "admin")
+	{
+	alert ("Login successfully");
+	window.location = "https://www.facebook.com/"; // Redirecting to other page.
+	return false;
+	}
+else
+	{
+	attempt --;// Decrementing by one.
+	alert("You have left "+attempt+" attempt;");// Disabling fields after 3 attempts.
+if( attempt == 0)
+	{
+	document.getElementById("username").disabled = true;
+	document.getElementById("password").disabled = true;
+	document.getElementById("submit").disabled = true;
+return false;
+	}
+	}
+}
+			</script>
+		</div>
+		
+		<center>
+			<p>
+			<pre style="font-size:20px">
+username: admin
+password: admin
+			
+enter this to "Login successfully" or else you will get an "Attempt Warning".
+			</pre>
+			</p>
+		</center>
+		
+		
+
+	<div class="copy-right">
+		All Right Reserve. Incognito Pro. &trade; &copy;
+	</div>
+	
+</body>
+</html>

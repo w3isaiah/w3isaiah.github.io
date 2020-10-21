@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<style>
+body { 
+	background:; 
+	background-repeat: no-repeat;
+	background-size: 100%;
+	}
+
+.t {
+	padding: 10px 30px;
+	background: transparent;
+	color: white;
+	}
+	
+.t:hover {
+	background: green;
+	color: white;
+	}
+
+table {
+	background: gray;
+	margin: 10px;
+	}
+	
+span.note {
+	color: red;
+	}
+
+.divclass {
+	background: linear-gradient(to right, black, blue, skyblue, blue, black);
+	color: white;
+	padding: 10px;
+	margin: 10px;
+	}
+	
+.pclass {
+	background: linear-gradient(to right, black, blue, red, magenta, green, orange, green, magenta, red, blue, black);
+	border: 2px solid magenta;
+	margin: 10px;
+	text-shadow: 0 0 8px black;
+	}
+
+.table {
+	background: gray;
+	width: 80%;
+	margin: 10px;
+	text-align: center;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	border: 1px solid black;
+	}
+
+.tr {
+	padding: 10px;
+	border: 1px solid black;
+	}
+	
+.tr:nth-child(even) {
+	background: #333;
+	}
+	
+.th {
+	background: lightgreen;
+	border: 1px solid black;
+	}
+
+.td {
+	padding: 10px;
+	margin: 2px;
+	border: 1px solid black;
+	}
+	
+.td:hover {
+	background: black;
+	color: red;
+	}
+</style>
+<script>
+function hidebtn()
+{
+var james=document.getElementsByClassName('h3');
+for (var love=0; love < james.length; love++)
+if (james[love].style.display=="none")
+	{
+	james[love].style.display="block";
+	document.getElementById('hidebtnid').innerHTML="hide";
+	}
+else
+	{
+	james[love].style.display="none";
+	document.getElementById('hidebtnid').innerHTML="show";
+	}
+}
+
+function colorbtn()
+{
+var james=document.getElementsByClassName('h3');
+for (var love=0; love < james.length; love++)
+if (james[love].style.color=="")
+	{
+	james[love].style.color="black";
+	}
+else if (james[love].style.color=="black")
+	{
+	james[love].style.color="magenta";
+	}
+else if (james[love].style.color=="magenta")
+	{
+	james[love].style.color="blue";
+	}
+else if (james[love].style.color=="blue")
+	{
+	james[love].style.color="yellow";
+	}
+else if (james[love].style.color=="yellow")
+	{
+	james[love].style.color="green";
+	}
+else if (james[love].style.color=="green")
+	{
+	james[love].style.color="gray";
+	}
+else if (james[love].style.color=="gray")
+	{
+	james[love].style.color="red";
+	}
+else
+	{
+	james[love].style.color="";
+	}
+}
+
+function fontbtn()
+{
+var james=document.getElementsByClassName('h3');
+for (var love=0; love < james.length; love++)
+if (james[love].style.fontFamily=="")
+	{
+	james[love].style.fontFamily="courier";
+	}
+else if (james[love].style.fontFamily=="courier")
+	{
+	james[love].style.fontFamily="algerian";
+	}
+else if (james[love].style.fontFamily=="algerian")
+	{
+	james[love].style.fontFamily="agency fb";
+	}
+else
+	{
+	james[love].style.fontFamily="";
+	}
+}
+
+function bgbtn()
+{
+var james=document.getElementsByClassName('h3');
+for (var love=0; love < james.length; love++)
+if (james[love].style.background=="")
+	{
+	james[love].style.background="black";
+	}
+else if (james[love].style.background=="black")
+	{
+	james[love].style.background="blue";
+	}
+else if (james[love].style.background=="blue")
+	{
+	james[love].style.background="red";
+	}
+else if (james[love].style.background=="red")
+	{
+	james[love].style.background="orange";
+	}
+else if (james[love].style.background=="orange")
+	{
+	james[love].style.background="green";
+	}
+else if (james[love].style.background=="green")
+	{
+	james[love].style.background="violet";
+	}
+else if (james[love].style.background=="violet")
+	{
+	james[love].style.background="brown";
+	}
+else if (james[love].style.background=="brown")
+	{
+	james[love].style.background="gray";
+	}
+else if (james[love].style.background=="gray")
+	{
+	james[love].style.background="#333";
+	}
+else
+	{
+	james[love].style.background="";
+	}
+}
+
+function textbtn()
+{
+var james=document.getElementsByClassName('h3');
+for (var love=0; love < james.length; love++)
+if (james[love].innerHTML=="Title")
+	{
+	james[love].innerHTML="James Isaiah C. Love";
+	}
+else if (james[love].innerHTML=="James Isaiah C. Love")
+	{
+	james[love].innerHTML="Czarina Manago";
+	}
+else
+	{
+	james[love].innerHTML="Title";
+	}
+}
+
+function alignbtn()
+{
+var james=document.getElementsByClassName('h3');
+for (var love=0; love < james.length; love++)
+if (james[love].style.textAlign=="")
+	{
+	james[love].style.textAlign="center";
+	}
+else if (james[love].style.textAlign=="center")
+	{
+	james[love].style.textAlign="right";
+	}
+else
+	{
+	james[love].style.textAlign="";
+	}
+}
+
+function borderbtn()
+{
+var james=document.getElementsByClassName('h3');
+for (var love=0; love < james.length; love++)
+if (james[love].style.border=="")
+	{
+	james[love].style.border="3px solid black";
+	}
+else if (james[love].style.border=="3px solid black")
+	{
+	james[love].style.border="3px solid blue";
+	}
+else if (james[love].style.border=="3px solid blue")
+	{
+	james[love].style.border="3px solid red";
+	}
+else if (james[love].style.border=="3px solid red")
+	{
+	james[love].style.border="3px solid orange";
+	}
+else if (james[love].style.border=="3px solid orange")
+	{
+	james[love].style.border="3px solid green";
+	}
+else if (james[love].style.border=="3px solid green")
+	{
+	james[love].style.border="3px solid violet";
+	}
+else if (james[love].style.border=="3px solid violet")
+	{
+	james[love].style.border="3px solid brown";
+	}
+else if (james[love].style.border=="3px solid brown")
+	{
+	james[love].style.border="3px solid gray";
+	}
+else if (james[love].style.border=="3px solid gray")
+	{
+	james[love].style.border="3px solid #333";
+	}
+else
+	{
+	james[love].style.border="";
+	}
+}
+
+function mainbtn()
+{
+var james=document.getElementById('main');
+if (james.style.display==="none")
+	{
+	james.style.display="block";
+	document.getElementById('content').innerHTML="";
+	document.getElementById('mainbtnid').innerHTML='"click me to hide"';
+	alert('By Clicking This Button, All Content will be Return. By: James Love')
+	}
+else
+	{
+	james.style.display="none"
+	document.getElementById('content').innerHTML="<center>The Content is Hidden<br> Created by: James Isaiah C. Love<br>Course: Act<br> This is my Project in CPPROG<br> Maam S. Balais.</center>";
+	document.getElementById('mainbtnid').innerHTML='"click me to show"';
+	alert('By Clicking This Button you are Hiding All Content. By: James Love');
+	document.getElementById('content').style.color="white";
+	document.getElementById('content').style.fontSize="60px";
+	document.getElementById('content').style.margin="20px";
+	document.getElementById('content').style.textShadow="0 0 3px red";
+	}
+}
+
+function tablebtn()
+{
+var james=document.getElementsByClassName('table');
+for (var love=0; love < james.length; love++)
+if (james[love].style.display=="none")
+	{
+	james[love].style.display="";
+	document.getElementById('tablebtnid').innerHTML="hide table";
+	}
+else
+	{
+	james[love].style.display="none";
+	document.getElementById('tablebtnid').innerHTML="show table";
+	}
+}
+</script>
+</head>
+<body background="kalilinux.jpg">
+	<div class="navbar">
+			<a href="index.html">Home</a>
+			<a href="profile.html">Profile</a>
+			<a href="images.html">Images</a>
+			<a href="code.html">Codes</a>
+			<div class="dropdown">
+				<button class="dropbtn">Topics
+				<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="table.html">HTML Table</a>
+					<a href="lists.html">HTML Lists</a>
+					<a href="form.html">HTML Forms</a>
+					<a href="class.html">HTML Class</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Projects
+				<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="calculator.html">Calculator</a>
+					<a href="input.html">Midterm Examination</a>
+					<a href="login.html">Login</a>
+					<a href="test.html">Test Page</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Media
+				<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="movie-links.html">Movies Section</a>
+				</div>
+			</div>
+	</div>
+	
+<button onclick="mainbtn()" id="mainbtnid" style="width:100%">"click me to hide"</button>
+
+<div id="content"></div>
+
+<div id="main">
+
+<table border="1">
+	<tr>
+		<td><button class="t" id="hidebtnid" onclick="hidebtn()">hide</button></td>
+		<td><input class="t" type="button" onclick="colorbtn()" value="color" title="click to change, and click again to resume changing."></td>
+		<td><input class="t" type="button" onclick="fontbtn()" value="font" title="click to change, and click again to resume changing."></td>
+		<td><input class="t" type="button" onclick="bgbtn()" value="background" title="click to change, and click again to resume changing."></td>
+		<td><input class="t" type="button" onclick="textbtn()" value="text" title="click to change, and click again to resume changing."></td>
+		<td><input class="t" type="button" onclick="alignbtn()" value="align" title="click to change, and click again to resume changing."></td>
+		<td><input class="t" type="button" onclick="borderbtn()" value="border" title="click to change, and click again to resume changing."></td>
+	</tr>
+</table>
+
+<div class="divclass">
+	<h3 class="h3">Title</h3>
+	<p class="pclass"><marquee behavior="alternate">Im using <span class="note">Span</span> on <span class="note">Red</span> Colored Text.</marquee></p>
+</div>
+<div class="divclass">
+	<h3 class="h3">Title</h3>
+	<p class="pclass"><marquee behavior="alternate">Im using <span class="note">Span</span> on <span class="note">Red</span> Colored Text.</marquee></p>
+</div>
+<div class="divclass">
+	<h3 class="h3">Title</h3>
+	<p class="pclass"><marquee behavior="alternate">Im using <span class="note">Span</span> on <span class="note">Red</span> Colored Text.</marquee></p>
+</div>
+
+
+<button onclick="tablebtn()" id="tablebtnid" style="width:100%">hide table</button>
+<table class="table" id="table">
+	<tr class="tr">
+		<th class="th">Title</th>
+		<th class="th">Title</th>
+		<th class="th">Title</th>
+	</tr>
+	<tr class="tr">
+		<td class="td">body</td>
+		<td class="td">body</td>
+		<td class="td">body</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">body</td>
+		<td class="td">body</td>
+		<td class="td">body</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">body</td>
+		<td class="td">body</td>
+		<td class="td">body</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">body</td>
+		<td class="td">body</td>
+		<td class="td">body</td>
+	</tr>
+	<tr class="tr">
+		<td class="td">body</td>
+		<td class="td">body</td>
+		<td class="td">body</td>
+	</tr class="tr">
+	<tr>
+		<td class="td">body</td>
+		<td class="td">body</td>
+		<td class="td">body</td>
+	</tr>
+</table>
+
+</div>
+</body>
+</html>
